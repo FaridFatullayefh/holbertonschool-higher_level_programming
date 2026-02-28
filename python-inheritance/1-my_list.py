@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 """
-This module defines the MyList class.
+Bu modul list-dən miras alan MyList klasını təyin edir.
 """
 
 
 class MyList(list):
-    """A subclass of list with custom sorting capabilities."""
+    """list klasını genişləndirən xüsusi klas."""
 
     def print_sorted(self):
-        """Prints the list in ascending sorted order."""
+        """Siyahıdakı elementləri artan sıra ilə çap edir.
+
+        Orijinal siyahının sırasını dəyişmir.
+        """
         print(sorted(self))
